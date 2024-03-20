@@ -1,0 +1,115 @@
+:root {
+    --color-F8F8F8: #F8F8F8;
+    --color-FFFFFF: #FFFFFF;
+    --color-CCCCCC: #CCCCCC;
+    --color-222222: #222222;
+    --color-6C63FF: #6C63FF;
+    --color-rgba-0-0-0-dot2: #00000033;
+}
+
+body {
+    background-color: var(--color-F8F8F8);
+}
+
+/* form */
+#form-container {
+    background-color: var(--color-FFFFFF);
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px var(--color-rgba-0-0-0-dot2);
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+#form-container h2 {
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+#form-container a {
+    color: var(--color-222222);
+    transition: .5s;
+}
+
+#form-container a:hover {
+    color: var(--color-6C63FF);
+}
+
+#form-container form {
+    padding-bottom: 0;
+}
+
+#form-container .form-control {
+    border: none;
+    border-bottom: 1px solid var(--color-CCCCCC);
+    border-radius: 0;
+}
+
+#form-container .form-control:focus {
+    box-shadow: none;
+}
+
+#form-container .form-floating label {
+    color: var(--color-CCCCCC);
+}
+
+#form-container .form-floating > .form-control:focus~label {
+    color: var(--color-222222);
+}
+
+#form-container input[type="submit"],
+#form-container input[type="checkbox"]:checkd {
+    background-color: var(--color-6C63FF);
+    border-color: var(--color-6C63FF);
+}
+
+.btn.btn-primary {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* image */
+.row.align-items-center {
+    align-content: center;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.col-md-6.order-md-1 {
+    padding-top: 50px;
+}
+
+#link-container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#link-container a,
+.form-check-label a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* media query - tablet*/
+@media(min-width: 768px) {
+    #form-container {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-bottom: 50px;
+        margin-right: auto;
+    }
+
+    .btn.btn-primary {
+        width: auto;
+    }
+
+    .col-md-6.order-md-1 {
+        padding-top: 0;
+    }
+}
